@@ -1,0 +1,20 @@
+.container {
+    background-color: aqua;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 40%;
+}
+
+.container h1 {
+    font-size: larger;
+}
+
+.container h2 {
+    font-size: medium;
+}
+
+.container p {
+    font-size: smaller;
+}

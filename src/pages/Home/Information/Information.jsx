@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Project, Technology, Training } from "../../../components";
+import style from './Information.module.css';
 
 function Information() {
     const [selectedComponent, setSelectedComponent] = useState("Technology");
@@ -9,7 +10,7 @@ function Information() {
     };
 
     return (
-        <>
+        <div className={style.container}>
             <button onClick={() => handleButtonClick("Technology")}>Tecnología</button>
             <button onClick={() => handleButtonClick("Project")}>Proyecto</button>
             <button onClick={() => handleButtonClick("Training")}>Formación</button>
@@ -19,7 +20,7 @@ function Information() {
                 {selectedComponent === "Project" && <Project />}
                 {selectedComponent === "Training" && <Training />}
             </div>
-        </>
+        </div>
     );
 }
 
