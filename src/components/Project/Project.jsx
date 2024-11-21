@@ -17,9 +17,9 @@ function Project() {
             name: "Las Casitas del Hornero",
             description: "La Casita del Hornero es un proyecto inmobiliario enfocado en brindar soluciones de alojamiento accesibles y fomentar la participación comunitaria. La plataforma conecta a usuarios interesados en alquilar habitaciones de hotel con propietarios que desean publicar y gestionar sus alojamientos.",
             image: casitadelhorneroimage,
-            urlCodeFront: "https://github.com/EzeTorcetta/las-casitas-del-hornero-Front",
-            urlCodeBack: "https://github.com/juanmaxx2/La-Casita-del-Hornero",
-            urlPage: "https://la-casita-del-hornero.vercel.app/Home",
+            urlCodeFront: "https://github.com/juanmaxx2/La-Casita-del-Hornero",
+            urlCodeBack: "https://github.com/EzeTorcetta/las-casitas-del-hornero-Back",
+            urlPage: "https://la-casita-del-hornero.vercel.app",
         },
     ];
 
