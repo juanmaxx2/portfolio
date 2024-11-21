@@ -1,3 +1,6 @@
+import React from 'react';
+import style from './Training.module.css';
+
 function Training() {
     const timeline = [
         {
@@ -8,12 +11,12 @@ function Training() {
         {
             year: "2020 - Actual",
             title: "Licenciatura en Ciencias de la Computación",
-            institution: "UNSJ",
+            institution: "Universidad Nacional de San Juan",
         },
         {
             year: "2021",
             title: "HTML5 y CSS",
-            institution: "Movistar Aprender",
+            institution: "Conectar Empleo",
         },
         {
             year: "Feb 2023 - Junio 2023",
@@ -23,31 +26,20 @@ function Training() {
     ];
 
     return (
-        <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-            <h2 style={{ textAlign: "center" }}>Formación</h2>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
-                {timeline.map((item, index) => (
-                    <div
-                        key={index}
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "20px",
-                            width: "80%",
-                        }}
-                    >
-                        {/* Línea vertical */}
-                        <div style={{ width: "5px", backgroundColor: "#007BFF", height: "100px" }}></div>
+        <div className={style.container}>
+            {timeline.map((item, index) => (
+                <div key={index} className={style.timelineItem}>
+                    {/* Línea vertical */}
+                    <div className={style.verticalLine} />
 
-                        {/* Información del evento */}
-                        <div style={{ flex: 1, backgroundColor: "#F1F3F5", padding: "10px 20px", borderRadius: "8px" }}>
-                            <p style={{ fontWeight: "bold", marginBottom: "5px" }}>{item.year}</p>
-                            <p style={{ margin: "5px 0" }}>{item.title}</p>
-                            <p style={{ fontSize: "14px", color: "#555" }}>{item.institution}</p>
-                        </div>
+                    {/* Información del evento */}
+                    <div className={style.eventInfo}>
+                        <p className={style.eventYear}>{item.year}</p>
+                        <p className={style.eventTitle}>{item.title}</p>
+                        <p className={style.eventInstitution}>{item.institution}</p>
                     </div>
-                ))}
-            </div>
+                </div>
+            ))}
         </div>
     );
 }

@@ -2,6 +2,7 @@ import { VscGithubAlt } from "react-icons/vsc";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { GoMail } from "react-icons/go";
 import style from './Profile.module.css';
+import image from '../../../assets/image/Yo.jpeg'
 
 function Profile() {
     const url = {
@@ -11,26 +12,34 @@ function Profile() {
     };
 
     return (
-        <div className={ style.container }>
-            <img alt="profile" />
+        <div className={style.container}>
+            <img 
+                src={image || "https://via.placeholder.com/200"}
+                alt="Foto"
+            />
             <h1>Juan Martín López Frau</h1>
-            <div>
-                <h2>-Estudiante de la Licenciatura en Ciencias de la Computación</h2>
-                <h2>-Full Stack Developer</h2>
+            <div className={style.estudios}>
+                <h2>Estudiante de la Licenciatura en Ciencias de la Computación</h2>
+                <h2>Full Stack Developer</h2>
             </div>
-            <div>
+            <div className={style.links}>
                 <a href={url.github} target="_blank" rel="noopener noreferrer">
-                    <button><VscGithubAlt /></button>
+                    <VscGithubAlt size={50} color="#f0f7fd"/>
                 </a>
                 <a href={url.linkedin} target="_blank" rel="noopener noreferrer">
-                    <button><SlSocialLinkedin /></button>
+                    <SlSocialLinkedin size={50} color="#f0f7fd"/>
                 </a>
                 <a href={`mailto:${url.mail}`}>
-                    <button><GoMail /></button>
+                    <GoMail size={50} color="#f0f7fd"/>
                 </a>
             </div>
             <button>Descargar CV</button>
-            <p>SOY UNA PERSONA COMPROMETIDA, CON EXPERIENCIA EN DESARROLLO DE SOFTWARE, APASIONADO/A POR EL APRENDIZAJE CONTINUO Y LA RESOLUCIÓN DE PROBLEMAS. DESTACO POR MI CAPACIDAD PARA TRABAJAR EN EQUIPO Y ADAPTARME A ENTORNOS DINÁMICOS, LOGRANDO CUMPLIR OBJETIVOS Y APORTAR VALOR A LOS PROYECTOS.</p>
+            <p>
+            Soy una persona comprometida, con experiencia en desarrollo de software,
+            apasionado/a por el aprendizaje continuo y la resolución de problemas.
+            Destaco por mi capacidad para trabajar en equipo y adaptarme a entornos dinámicos,
+            logrando cumplir objetivos y aportar valor a los proyectos.
+            </p>
         </div>
     );
 }

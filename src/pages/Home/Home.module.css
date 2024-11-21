@@ -1,7 +1,7 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
 .container {
@@ -9,12 +9,28 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #82C0CC;
 }
 
-.home{
+.home {
     width: 60%;
-    height: 60%;
+    height: auto; /* Ajusta el alto según el contenido */
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #489FB5;
+    overflow: hidden; /* Previene desbordes */
+}
+
+/* Diseño responsivo para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .home {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 0;
+    }
 }

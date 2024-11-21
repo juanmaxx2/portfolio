@@ -1,4 +1,85 @@
-.container{
+.container {
     width: 60%;
-    height: 50%;
+    height: 75vh;
+}
+
+.buttonsContainer {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonSelected {
+    background-color: #ffffff;
+    color: #16697A;
+    border: none;
+    border-radius: 0.4em;
+    padding: 0.4em 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+    font-size: larger;
+}
+
+.buttonSelected:hover {
+    background-color: #c9dde6;
+}
+
+.buttonNotSelected {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 0.4em;
+    padding: 0.4em 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+    font-size: larger;
+}
+
+.buttonNotSelected:hover {
+    color: #c9dde6;
+}
+
+.tecnologies {
+    height:70%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Ocupa casi todo el ancho de la pantalla */
+        height: auto; /* Ajusta el alto al contenido */
+    }
+
+    .buttonsContainer {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .buttons {
+        flex-direction: row; /* Botones en columna */
+        gap: 0.5rem; /* Espaciado entre botones */
+        justify-content: center;
+    }
+
+    .buttonSelected, .buttonNotSelected {
+        font-size: 1rem; /* Ajusta el tamaño de fuente */
+        padding: 0.3em 0.8em;
+    }
+
+    .tecnologies {
+        padding: 0.5rem;
+    }
 }

@@ -4,6 +4,11 @@
     gap: 20px;
     justify-content: center;
     height: 100%;
+    color: white;
+    background-color: #16697A;
+    padding: 1.5em;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .techItem {
