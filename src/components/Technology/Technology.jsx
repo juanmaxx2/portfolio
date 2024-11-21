@@ -13,11 +13,11 @@ function Technology() {
     const technologies = [
         // Lenguajes de programación
         { name: "JavaScript", icon: <FaJs size={50} color="#F7DF1E" /> },
-        { name: "Java", icon: <FaJava size={50} color="#007396" /> },
+        { name: "Java", icon: <FaJava size={50} color="#c2eaf1" /> },
         { name: "C", icon: <SiC size={50} color="#A8B9CC" /> },
         { name: "Python", icon: <FaPython size={50} color="#3776AB" /> },
-        { name: "Haskell", icon: <SiHaskell size={50} color="#5D4F85" /> },
-        { name: "Prolog", icon: <DiProlog size={50} color="#E61A1D" /> },
+        { name: "Haskell", icon: <SiHaskell size={50} color="#967ed7" /> },
+        { name: "Prolog", icon: <DiProlog size={50} color="#f46140" /> },
 
         // Librerías/Frameworks de Python
         { name: "Numpy", icon: <SiNumpy size={50} color="#013243" /> },
@@ -26,7 +26,7 @@ function Technology() {
         // Librerías/Frameworks de JavaScript
         { name: "React", icon: <FaReact size={50} color="#61DAFB" /> },
         { name: "Node.js", icon: <FaNodeJs size={50} color="#68A063" /> },
-        { name: "Vite", icon: <SiVite size={50} color="#646CFF" /> },
+        { name: "Vite", icon: <SiVite size={50} color="#9d42f8" /> },
         { name: "Express", icon: <SiExpress size={50} color="#000000" /> },
         { name: "Reactstrap", icon: <FaReact size={50} color="#61DAFB" /> },
         { name: "Cloudinary", icon: <SiCloudinary size={50} color="#3448C5" /> },
@@ -34,8 +34,8 @@ function Technology() {
         // Bases de datos
         { name: "SQL", icon: <FaDatabase size={50} color="#F29111" /> },
         { name: "NoSQL", icon: <FaDatabase size={50} color="#F29111" /> },
-        { name: "MySQL", icon: <SiMysql size={50} color="#4479A1" /> },
-        { name: "PostgreSQL", icon: <SiPostgresql size={50} color="#336791" /> },
+        { name: "MySQL", icon: <SiMysql size={50} color="#69b3ec" /> },
+        { name: "PostgreSQL", icon: <SiPostgresql size={50} color="#3ea5f4" /> },
         { name: "MongoDB", icon: <SiMongodb size={50} color="#47A248" /> },
 
         // Herramientas

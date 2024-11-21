@@ -13,10 +13,25 @@
 
 .techItem {
     text-align: center;
-    width: 50px;
+    width: 80px; /* Ajuste de tamaño */
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Añadido efecto de movimiento */
+}
+
+.techItem:hover {
+    transform: translateY(-10px); /* Levanta el ícono al pasar el mouse */
+}
+
+.techItem:hover .techName {
+    opacity: 1; /* Hace el nombre visible */
+    transform: translateY(0); /* Asegura que el nombre se mueva hacia abajo */
 }
 
 .techName {
     margin-top: 10px;
     font-size: 14px;
+    opacity: 0; /* Comienza oculto */
+    transform: translateY(10px); /* El nombre comienza ligeramente abajo */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Añadido efecto de aparición */
+    color:#967ed7;
 }

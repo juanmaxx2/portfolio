@@ -16,7 +16,7 @@
 }
 
 .container h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     margin-bottom: 10px;
 }
@@ -24,6 +24,7 @@
 .estudios {
     display: flex;
     flex-direction: column;
+    margin: 0.5em 0;
 }
 
 .container h2 {
@@ -36,6 +37,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin: 0.5em 0;
 }
 
 .container a {

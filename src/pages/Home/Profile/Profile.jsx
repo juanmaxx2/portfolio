@@ -33,7 +33,9 @@ function Profile() {
                     <GoMail size={50} color="#f0f7fd"/>
                 </a>
             </div>
-            <button>Descargar CV</button>
+            <a href="https://drive.google.com/file/d/1zLXsTBRodW8XsST86i0-89RAjMqaZPCf/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <button>Descargar CV</button>
+            </a>
             <p>
             Soy una persona comprometida, con experiencia en desarrollo de software,
             apasionado/a por el aprendizaje continuo y la resolución de problemas.
