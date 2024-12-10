@@ -38,7 +38,7 @@ function Profile() {
             </a>
             <p>
             Soy una persona comprometida, con experiencia en desarrollo de software,
-            apasionado/a por el aprendizaje continuo y la resolución de problemas.
+            apasionado por el aprendizaje continuo y la resolución de problemas.
             Destaco por mi capacidad para trabajar en equipo y adaptarme a entornos dinámicos,
             logrando cumplir objetivos y aportar valor a los proyectos.
             </p>
